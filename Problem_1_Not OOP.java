@@ -4,7 +4,7 @@
 
  import java.util.Scanner; (kanw import ti vivliothiki gia na mporo na xrisimopoiso tin klasi scanner)
  
- public class main {
+ public class Main {
 	 
 	 //creating the main method
 	 public static void main(String[] args) {
