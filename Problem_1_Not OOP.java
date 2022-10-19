@@ -50,8 +50,8 @@
 			 //printing an message to the user asking him if there are more products
 			 System.out.println("More Products? 1:YES, 2:NO");
 			 //calling NextInt method to save the answer typed by the user in answer variable 
-			 int answer = in.nextInt(); //kalutera na to dilona eksw apo to while
-
+			 int answer = in.nextInt(); 
+			 
 			 if(answer != 1)
 					more = false;
 
