@@ -1,54 +1,56 @@
+import java.util.ArrayList;
 public class Student {
 	private String name;
 	private String id;
+
+	//one student attends many courses so i use ArrayList
+	private ArrayList courses<Course> = new ArrayList<Course>(); 	
 	
+	//creating a public method that associates students with courses they attend to
+	public void addCourse(Course aCourse) {
+		courses.add(aCourse) 
+		aCourse.addStudent(this); //i am using "this" because i need to indicate the object i am creating in current class (Student)
+	}
 	
-	//o constructor mou exei orismata pragma pou simainei oti DEN mporei na dimiourgithei antikeimeno foititis xwris na exei KAI onoma (aName) KAI ID (anID)
+	//student's constructor (we can't create a student without name and id)
 	public Student(String aName, String anID) {
-		//aName = parametros, name = idiotita klasis
 		name = aName;
 		ID = anID;
-	
 	}
 	
-	//ftiaxnw deutero constructor gia na mporw na ftiaxnw antikeimena gia tous metegrafentes foitites
-	//oi metegrafentes exoun onoma alla oxi ID
-	//oloi oi constructors exoun to onoma tis klasis alla prepei na exoun diaforetikes parametrous/diaforetiko arithmo parametrwn
+	//2nd constructor for transferred students, they can be created without id
 	public Student(String aName) {
 		name = aName;
-		id = "9999";
+		id = "";
 	}
 	
-	//ftiaxnw mia methodo gia na ekxwrw timi sto ID twn metegrafantwn otan einai diathesimo
-	//epomenws to zitoumeno ID to vazw stin parametro anID
+	//creating a public method to add transferred's student ID
 	public void setID(String anID){
-		id = anID;
+		if(id.equals("") //checking if the student is transferred
+			id = anID;
+		else
+			System.out.println("Student already has ann ID");
 	}
 	
-	
-	//ftiaxnw methodo i opoia epistrefei to onoma tou foititi
+	//creating a method that returns student's name
 	public String getName() {
 		return name;
 	}
 	
-	
-	//ftiaxnw methodo i opoia epistrefei to ID tou foititi
+	//creating a method that returns student's ID
 	public String getID() {
 		return id;
 	}
 	
-	//tropos 2 gia na tipwsw stoixeia
-	//i an exw polla pragmata na tipwsw  ftiaxnw mia methodo printInfo
-	//public void printInfo() {
-	//	System.out.println("Student Data: ");
-	//	System.out.println("Name: " + name);
-	//	System.out.println("ID: " id);
-	//}
-	
-	
-	//ftiaxnw trito kataskeuasti pou den pairnei parametrous
-	//public Student() {
-	//	name = "No name given";
-	//	ID = "9999";
-	//}
+	//creating a method to print student's data: name, ID, courses he attends
+	public void printData() {
+		System.out.println("Student Data: ");
+		System.out.println("Name: " + name);
+		System.out.println("ID: " + id);
+	    System.out.println("Enrolled in: ");
+        for(int i=0; i<courses.size(); i++){ //size is a method that returns the number of elements i filled in the array 
+			Cource c = courses.get(i); 
+		System.out.println(c.getName()); 
+	  }
+    }
 }
