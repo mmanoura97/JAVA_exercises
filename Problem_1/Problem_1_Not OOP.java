@@ -21,21 +21,21 @@
 			 
 			 //printing a message for the user to understand tha he is needed to type the product name
 			 System.out.println("Product name: ");
-			 //calling NextLine method to save the name typed by the user in name variable 
-			 String name = in.NextLine();
+			 //calling nextLine method to save the name typed by the user in name variable 
+			 String name = in.nextLine();
 			 
 			 //printing a message for the user to understand tha he is needed to type the product price
 			 System.out.println("Price: ");
-			 //calling NextDouble method to save the price typed by the user in price variable 
-			 double price = in.NextDouble();
+			 //calling nextDouble method to save the price typed by the user in price variable 
+			 double price = in.nextDouble();
 			 
 			 //printing a message for the user to understand tha he is needed to type the product price
 			 System.out.println("Score: ");
-			 //calling NextInt method to save the score typed by the user in score variable 
-			 int score = in.NextInt(); //we consider that the value of score variable is an integer 0-100
+			 //calling nextInt method to save the score typed by the user in score variable 
+			 int score = in.nextInt(); //we consider that the value of score variable is an integer 0-100
 			 
 		     //finding the best score
-			 if (score/price ? bestScore/bestPrice){
+			 if (score/price > bestScore/bestPrice){
 				 
 				 bestName = name;
 				 bestScore = score;
