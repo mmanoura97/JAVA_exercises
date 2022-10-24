@@ -1,5 +1,5 @@
 public class TimeStamp{
-	//respect of encaptulation
+	//respect of encapsulation
 	//private attributes
 	private int hour;
 	private int minute;

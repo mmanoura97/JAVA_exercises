@@ -10,8 +10,8 @@ public class Main {
 						+ "Therefore, he adds to the attribute as many hours as needed depending on his time zone.");
 	
 	//adding 1 hour and then adding another hour
-	T1.hour++; //auksanei kata 1 wra
-	T1.hour++; //auksanetai gia alli 1 wra
+	T1.hour++; 
+	T1.hour++; 
 	
 	//printing time
 	T1.printTime(); //the time now is 25:15:40 -- therefore we have invalid time
