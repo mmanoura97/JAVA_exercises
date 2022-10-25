@@ -18,24 +18,24 @@ import java.util.Scanner;
 	 
 	 
 	 //creating a method that prints data (so ti needs to be public)
-	 public void.printData() {
+	 public void printData() {
 		 System.out.println("Name: " + name);
 		 System.out.println("Price: " + price);
-		 System.out.println("Score: " + scre);
+		 System.out.println("Score: " + score);
 	 }
 	 
 	 
 	 //creating a method that saves data (so ti needs to be public)	 
-	 public void.read() {
+	 public void read() {
 		 //creating an object (in) to call class scanner and make possible the user-console communication
-		 Scanner in = new Scanner (System.in);
+		 Scanner in = new Scanner(System.in);
 		 
 		 System.out.println("Product name: ");
-		 String name = in.NextLine();
+		 name = in.nextLine();
 		 System.out.println("Price: ");
-		 double price = in.NextDouble();
+		 price = in.nextDouble();
 		 System.out.println("Score: ");
-		 int score = in.NextInt();
+		 score = in.nextInt();
 	 }
 	
 	
@@ -48,6 +48,7 @@ import java.util.Scanner;
 			return false;
 	}
  }
+ 
  
  
 //creating the Main class that creates all the objects we need

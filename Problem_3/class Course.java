@@ -22,4 +22,9 @@ public class Course {
 	public Course(String aName){
 		name = aName;
 	}
+	
+	//creating a method that returns course's name
+	public String getName() {
+		return name;
+	}
 }

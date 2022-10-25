@@ -2,7 +2,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		public Student() {
 			//setting name and ID for student 1
 			Student S1 = new Student("Babis", "1014");
 			
@@ -30,7 +29,6 @@ public class Main {
 				
 			//printing course's 1 name and the names of the students attend to it
 			C1.printInformation();	
-		}
 		
 	}
 }
