@@ -8,11 +8,14 @@ Eventually we will:
 a) i) create SA1 savings account with an initial balance of 0 and an interest rate of 0.02
    ii) deposit 1500 euro in this account and display its balance
    iii) calculate the interest, add it to the balance and display the final balance
+
 b) i) create control account CA1 and make 4 consecutive deposits of 500 euro
    ii) display the final balance of CA1
    iii) display the balance of SA1 by overriding the toString method with an appropriate message
+
 c) i) print a message: "What kind of account do you want to create? (1:Normal, 2:Savings)" and depending on the user's input the appropriate account will be created
    ii) print the details of the account created (polymorphic call)
+
 d) i) create BA2, SA2, CA2 accounts (normal account, savings account and checking account)
    ii) add to the bank the accounts it has just created and print the data of all the accounts (polymorphic call)
 
