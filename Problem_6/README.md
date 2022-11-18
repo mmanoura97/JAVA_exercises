@@ -13,4 +13,3 @@ Create a program that manages the registration of students (undergraduate [Stude
 *C2: Math, 5
 *GS1: Takis, 11010, Papadopoulos
 
-)
